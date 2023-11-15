@@ -11,15 +11,19 @@ public class CompareDateWithoutTimeJava8 {
 		System.out.println(response);
 
 		// Test 2
-		LocalDate startDate = LocalDate.of(2014, Month.FEBRUARY, 11);
-		LocalDate endDate = LocalDate.of(2014, Month.FEBRUARY, 12);
+		LocalDate startDate = LocalDate.of(2023, Month.FEBRUARY, 11);
+		LocalDate endDate = LocalDate.of(2023, Month.FEBRUARY, 12);
+		
 		response = CompareDateWithoutTimeJava8.compareTwoDates(startDate, endDate);
+		
 		System.out.println(response);
 
 		// Test 3
-		startDate = LocalDate.of(2014, Month.FEBRUARY, 12);
-		endDate = LocalDate.of(2014, Month.FEBRUARY, 11);
+		startDate = LocalDate.of(2023, Month.FEBRUARY, 12);
+		endDate = LocalDate.of(2023, Month.FEBRUARY, 11);
+		
 		response = CompareDateWithoutTimeJava8.compareTwoDates(startDate, endDate);
+		
 		System.out.println(response);
 	}
 
