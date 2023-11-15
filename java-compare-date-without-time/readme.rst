@@ -1,1 +1,1 @@
-You can read tutorial https://roytuts.com/compare-date-without-time-in-java/
+Please follow the tutorial https://roytuts.com/compare-date-without-time-in-java/
