@@ -12,15 +12,19 @@ public class CompareDateWithoutTime {
 		System.out.println(response);
 
 		// Test 2
-		Date startDate = new GregorianCalendar(2014, Calendar.FEBRUARY, 11).getTime();
-		Date endDate = new GregorianCalendar(2014, Calendar.FEBRUARY, 12).getTime();
+		Date startDate = new GregorianCalendar(2023, Calendar.FEBRUARY, 11).getTime();
+		Date endDate = new GregorianCalendar(2023, Calendar.FEBRUARY, 12).getTime();
+		
 		response = CompareDateWithoutTime.compareTwoDates(startDate, endDate);
+		
 		System.out.println(response);
 
 		// Test 3
-		startDate = new GregorianCalendar(2014, Calendar.FEBRUARY, 12).getTime();
-		endDate = new GregorianCalendar(2014, Calendar.FEBRUARY, 11).getTime();
+		startDate = new GregorianCalendar(2023, Calendar.FEBRUARY, 12).getTime();
+		endDate = new GregorianCalendar(2023, Calendar.FEBRUARY, 11).getTime();
+		
 		response = CompareDateWithoutTime.compareTwoDates(startDate, endDate);
+		
 		System.out.println(response);
 	}
 
@@ -41,12 +45,15 @@ public class CompareDateWithoutTime {
 
 	private static Date getZeroTimeDate(Date date) {
 		Calendar calendar = Calendar.getInstance();
+		
 		calendar.setTime(date);
 		calendar.set(Calendar.HOUR_OF_DAY, 0);
 		calendar.set(Calendar.MINUTE, 0);
 		calendar.set(Calendar.SECOND, 0);
 		calendar.set(Calendar.MILLISECOND, 0);
+		
 		date = calendar.getTime();
+		
 		return date;
 	}
 
