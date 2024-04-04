@@ -19,8 +19,11 @@ public class DateFormatConverterApp {
 		System.out.println(convertDate8Format("20220601", "yyyyMMdd", "dd/MM/yyyy"));
 		System.out.println(convertDateTime8Format("20220601123456", "yyyyMMddHHmmss", "dd/MM/yyyy HH:mm:ss"));
 		System.out.println(convertDateTime8Format("20220601123456", "yyyyMMddHHmmss", "dd/MM/yyyy hh:mm:ss"));
-		// System.out.println(convertDateTime8Format("20220601113456", "yyyyMMddhhmmss",
-		// "dd/MM/yyyy hh:mm:ss"));//error as input format needs HH instead of hh
+		System.out.println(convertDateFormat("04-04-2024", "dd-MM-yyyy", "dd/MM/yyyy"));
+		System.out.println(convertDate8Format("04-04-2024", "dd-MM-yyyy", "dd/MM/yyyy"));
+
+		// error as input format needs HH instead of hh
+		System.out.println(convertDateTime8Format("20220601113456", "yyyyMMddhhmmss", "dd/MM/yyyy hh:mm:ss"));
 	}
 
 	public static String convertDateFormat(String inputDate, String inputFormat, String outputFormat)
